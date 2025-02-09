@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="logo">Logo</div>
+        <button class="mobile-menu-btn">☰</button>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Revolutionary Tech Products</h1>
+            <p class="hero-subtitle">Discover the future of technology with our cutting-edge products</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">5000+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">99%</span>
+                    <span class="stat-label">Satisfaction Rate</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Support</span>
+                </div>
+            </div>
+            <button class="cta-button">Explore Products</button>
+        </div>
+    </section>
+    <!-- generally we use display:grid for the outermost html  -->
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <div class="feature-icon">🚀</div>
+            <h3>Lightning Fast</h3>
+            <p>Experience unprecedented speed with our latest technology</p>
+            <a href="#" class="feature-link">Learn More</a>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">🛡️</div>
+            <h3>Ultra Secure</h3>
+            <p>Your data is protected with military-grade encryption</p>
+            <a href="#" class="feature-link">Learn More</a>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">💎</div>
+            <h3>Premium Quality</h3>
+            <p>Built with the finest materials for lasting durability</p>
+            <a href="#" class="feature-link">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <h2 class="section-title">Featured Products</h2>
+    <section class="products">
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="without-button">
+                    <div class="badge">BEST SELLER</div>
+                    <img src="./assets/smartwatch.jpeg" alt="Smart Watch Pro" width="150rem" height="150rem">
+                    <div class="product-info">
+                        <h3>Smart Watch Pro</h3>
+                        <div class="rating">
+                            ⭐⭐⭐⭐⭐ <span>(128 reviews)</span>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$129.99</span>
+                            <span class="current-price">$99.99</span>
+                        </div>
+                        <div class="product-features">
+                            <p>• Heart Rate Monitoring</p>
+                            <p>• 5-Day Battery Life</p>
+                            <p>• Water Resistant</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="cart-button"><strong>Add to Cart</strong></button>
+                    <button class="wishlist-button">♡</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="without-button">
+                    <div class="badge new">New</div>
+                    <img src="./assets/buds.jpg" alt="Wireless Earbuds" style="width:10em ; height: 10em">
+                    <div class="product-info">
+                        <h3>Premium Wireless Earbuds</h3>
+                        <div class="rating">
+                            ⭐⭐⭐⭐½ <span>(94 reviews)</span>
+                        </div>
+                        <div class="price-container">
+                            <span class="current-price">$149.99</span>
+                        </div>
+                        <div class="product-features">
+                            <p>• Active Noise Cancellation</p>
+                            <p>• 30-Hour Battery Life</p>
+                            <p>• Touch Controls</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="cart-button"><strong>Add to Cart</strong></button>
+                    <button class="wishlist-button">♡</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="without-button">
+                    <div class="badge sale">20% Off</div>
+                    <img src="./assets/camera.jpg" alt="4K Action Camera" width="120rem" height="120rem">
+                    <div class="product-info">
+                        <h3>4K Action Camera</h3>
+                        <div class="rating">
+                            ⭐⭐⭐⭐ <span>(156 reviews)</span>
+                        </div>
+                        <div class="price-container">
+                            <span class="original-price">$249.99</span>
+                            <span class="current-price">$199.99</span>
+                        </div>
+                        <div class="product-features">
+                            <p>• 4K/60fps Video</p>
+                            <p>• Waterproof 30m</p>
+                            <p>• Image Stabilization</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button class="cart-button"><strong>Add to Cart</strong></button>
+                    <button class="wishlist-button">♡</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Some information about the company</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: sidlokhande2504@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <p>Social media links</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

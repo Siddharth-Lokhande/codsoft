@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe', sans-serif;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f8ff;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+.badge {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    font-weight: 600;
+}
+
+img {
+    border-radius: 8px;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: #ff5722;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffeb3b;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    gap: 15px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 600;
+
+}
+
+
+@media screen and (max-width: 760px) {
+    .nav {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+        justify-content: center;
+    }
+}
+
+.nav-links li a {
+    font-size: 1.2em;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+    color: #ff5722;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: blue;
+}
+
+.hero {
+    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-subtitle {
+    font-size: 1.2em;
+    color: #666;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff5722;
+}
+
+.stat-label {
+    color: #666;
+    margin-top: 5px;
+}
+
+.hero .hero-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.hero .hero-content h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 480px) {
+    .hero .hero-content h1 {
+        font-size: 1.5em;
+    }
+
+    .hero .hero-content {
+        padding: 10px;
+    }
+}
+
+.hero .hero-content .cta-button {
+    width: 100%;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #ff5722;
+    transition: background-color 0.3s ease-in-out;
+}
+
+@media screen and (max-width:480px) {
+    .hero .hero-content .cta-button {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}
+
+.hero .hero-content .cta-button:hover {
+    color: white;
+    background-color: #e64a19;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 30px;
+}
+
+.features .feature {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.feature-link {
+    color: #ff5722;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.feature-link:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.section-title {
+    text-align: center;
+}
+
+
+.product-card {
+    width: 100%;
+    margin: 0;
+    /* border: 1px solid blue; */
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.without-button:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25);
+}
+
+.without-button {
+    background: linear-gradient(to right, gray, lightgray);
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.current-price,
+.original-price {
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.product-info,
+.price-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-features {
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.product-card button {
+    margin: 5px 0 0 0;
+    padding: 0;
+    border: 2px solid #4caf50;
+    border-radius: 2em;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    background-color: #65d981;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.product-card button:hover {
+    color: #4caf50;
+    background-color: #e0f7fa;
+}
+
+@media screen and (max-width:480px) {
+    .product-card button {
+        color: blue;
+        background-color: orange;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffeb3b;
+    padding: 2% 2%;
+}
+
+.footer .footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+.footer .footer-content .footer-section {
+    margin: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .footer-content .footer-section p {
+    color: #555;
+    font-style: italic;
+}
+
+@media screen and (max-width: 760px) {
+    .footer .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer .footer-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+html {
+    font-size: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 60%;
+    }
+}
